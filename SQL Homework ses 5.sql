@@ -73,13 +73,4 @@ FROM Purchasing.PurchaseOrderDetail
 SELECT MAX(TaxRate)
 FROM SALES.SalesTaxRate
 
---14. 
-SELECT 
-Name, TaxType, IF(TaxRate<7, "LowTaxRate", "HighTaxRate")
-FROM SALES.SalesTaxRate
-
-
-SELECT 
-Name, TaxType, IF(TaxRate<7, "LowTaxRate", "HighTaxRate")
-FROM SALES.SalesTaxRate
 
